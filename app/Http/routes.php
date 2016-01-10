@@ -12,8 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+
+/*
+  Route for request from the home page
+  for locality
+*/
+Route::post('request', 'requestController@postRequest');
 
 /*
 |--------------------------------------------------------------------------
